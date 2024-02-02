@@ -6,23 +6,47 @@ import hasmaps.WordPattern;
 import linked_list.ListNode;
 import linked_list.RemoveDuplicateFromSortedList;
 import sliding_window.MaxCons;
+import sorting.MergeSort;
 import sorting.SelectionSort;
+import stack.PushAtTheBottomOFStack;
+import stack.ReverseTheString;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
 
-        //Selection sort
+     //Stack
+//        PushAtTheBottomOFStack pushAtTheBottomOFStack = new PushAtTheBottomOFStack();
+//        pushAtTheBottomOFStack.stack();
+//
+        //Reverse The string using Stack
+        ReverseTheString reverseTheString = new ReverseTheString();
+        reverseTheString.ReverseString();
 
-//        SelectionSort selectionSort = new SelectionSort();
+
+
+
+
+
+
+
+
+    //    {
+            //MergeSort
+//        MergeSort mergeSort = new MergeSort();
+//        mergeSort.mergeSortArray();
+
+            //Selection sort
+
+//       SelectionSort selectionSort = new SelectionSort();
 //        selectionSort.sortTheList();
 
-        //BinarySearch
-        BinarySearch binarySearch = new BinarySearch();
-        binarySearch.searchElement();
+            //BinarySearch
+//        BinarySearch binarySearch = new BinarySearch();
+//        binarySearch.searchElement();
 
-        //Gcd of Strings
+            //Gcd of Strings
 //       String str1 = "ABCABC";
 //       String str2 = "ABC";
 //
@@ -49,7 +73,7 @@ public class Main {
 //          System.out.println(num + " ");
 //      }
 
-        //rotate array
+            //rotate array
 //         int [] nums1 = {1,2,3,4,5,6,7};
 //         int k = 3;
 //         RotateArraySolution rotateArraySolution = new RotateArraySolution();
@@ -61,13 +85,13 @@ public class Main {
 //               System.out.print(num + " ");
 //           }
 
-        //majority element
+            //majority element
 //        int [] nums = {1,2,1,4,1,6,1};
 //        MajorityElement majorityElement = new MajorityElement();
 //       int majElement =  majorityElement.majorElement(nums);
 //        System.out.println(majElement);
 
-        //jump
+            //jump
 //        int [] nums = {3,0,8,2,0,0,1};
 //
 //        Jump jump = new Jump();
@@ -75,46 +99,46 @@ public class Main {
 //        System.out.println(b);
 
 
-        //WordPattern
+            //WordPattern
 //        String pattern = "abba";
 //        String s = "dog cat cat dog";
 //        WordPattern wordPattern = new WordPattern();
 //        wordPattern.wordPattern(pattern,s);
 
-        //String comparision
+            //String comparision
 
 //        char[] chars = {'a','a','b','b','c','c','c'};
 //        StringComparision s = new StringComparision();
 //         int v = s.compress(chars);
 //        System.out.println(v);
 
-        //
+            //
 //        ReverseVowels vo = new ReverseVowels();
 //        vo.reverseVowels("");
 
-        //Max consecutive
+            //Max consecutive
 //        int[] nums = {1,1,1,0,0,0,1,1,1,1,0};
 //
 //        MaxCons maxCons = new MaxCons();
 //         maxCons.longestOnes(nums,2);
 
 
-        //Linked List
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(1);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(2);
-        head.next.next.next.next = new ListNode(3);
-
-        // Create an instance of RemoveDuplicateFromSortedList
-        RemoveDuplicateFromSortedList remover = new RemoveDuplicateFromSortedList();
-
-        // Call deleteDuplicates to remove duplicates
-        ListNode result = remover.deleteDuplicates(head);
-        // Print the list after removing duplicates
-        System.out.println("List after removing duplicates:");
-        printList(result);
-
+            //Linked List
+//        ListNode head = new ListNode(1);
+//        head.next = new ListNode(1);
+//        head.next.next = new ListNode(2);
+//        head.next.next.next = new ListNode(2);
+//        head.next.next.next.next = new ListNode(3);
+//
+//        // Create an instance of RemoveDuplicateFromSortedList
+//         remover = new RemoveDuplicateFromSortedList();
+//
+//        // Call deleteDuplicates to remove duplicates
+//        ListNode result = remover.deleteDuplicates(head);
+//        // Print the list after removing duplicates
+//        System.out.println("List after removing duplicates:");
+//        printList(result);
+    //    }
 
 
     }
