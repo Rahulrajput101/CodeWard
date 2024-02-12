@@ -8,8 +8,7 @@ import linked_list.RemoveDuplicateFromSortedList;
 import sliding_window.MaxCons;
 import sorting.MergeSort;
 import sorting.SelectionSort;
-import stack.PushAtTheBottomOFStack;
-import stack.ReverseTheString;
+import stack.*;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -21,8 +20,20 @@ public class Main {
 //        pushAtTheBottomOFStack.stack();
 //
         //Reverse The string using Stack
-        ReverseTheString reverseTheString = new ReverseTheString();
-        reverseTheString.ReverseString();
+//        ReverseTheString reverseTheString = new ReverseTheString();
+//        reverseTheString.ReverseString();
+
+        //Reverse The stack
+//        ReverseStack reverseStack = new ReverseStack();
+//         reverseStack.reverseStackMain();
+
+        //SpanStock
+//        StockSpan stockSpan = new StockSpan();
+//        stockSpan.stockSpanMain();
+
+        //NextGreaterElement
+        NextGreaterElement nextGreaterElement = new NextGreaterElement();
+        nextGreaterElement.nextGreaterElementMain();
 
 
 
