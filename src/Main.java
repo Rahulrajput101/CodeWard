@@ -5,15 +5,62 @@ import Others.ReverseVowels;
 import hasmaps.WordPattern;
 import linked_list.ListNode;
 import linked_list.RemoveDuplicateFromSortedList;
+import queue.FirstNonRepeatingCharacter;
+import queue.InterleaveTwoHalves;
+import queue.QueueUsing2Stacks;
 import sliding_window.MaxCons;
 import sorting.MergeSort;
 import sorting.SelectionSort;
 import stack.*;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+
+        //Queue
+
+        InterleaveTwoHalves interleaveTwoHalves = new InterleaveTwoHalves();
+        Queue<Integer> q = new LinkedList<>();
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(4);
+        q.add(5);
+        q.add(6);
+        q.add(7);
+        q.add(8);
+        q.add(9);
+        q.add(10);
+        interleaveTwoHalves.interLeaveTwoHalvesMain(q);
+        while (!q.isEmpty()){
+            System.out.print(q.remove() + " ");
+        }
+
+//        FirstNonRepeatingCharacter firstNonRepeatingCharacter = new FirstNonRepeatingCharacter();
+//        firstNonRepeatingCharacter.firstNotRepeatingMain("aabccxb");
+//        QueueUsing2Stacks queueUsing2Stacks = new QueueUsing2Stacks();
+//         queueUsing2Stacks.push(1);
+//         queueUsing2Stacks.push(2);
+//         queueUsing2Stacks.push(3);
+//
+//        System.out.println(queueUsing2Stacks.pop());
+//        System.out.println(queueUsing2Stacks.peek());
+
+
+//        int[] a = {1,2,3,4,5};
+//        int[] b = {6,7,8,9,10};
+//        TestArray testArray = new TestArray();
+//
+//        int[] result =  testArray.sortArrayAndMerge(a,a.length,b, b.length);
+//
+//          for(int i = 0 ; i<= result.length-1; i++){
+//              System.out.println(result[i]);
+//          }
+
 
      //Stack
 //        PushAtTheBottomOFStack pushAtTheBottomOFStack = new PushAtTheBottomOFStack();
@@ -32,15 +79,8 @@ public class Main {
 //        stockSpan.stockSpanMain();
 
         //NextGreaterElement
-        NextGreaterElement nextGreaterElement = new NextGreaterElement();
-        nextGreaterElement.nextGreaterElementMain();
-
-
-
-
-
-
-
+//        NextGreaterElement nextGreaterElement = new NextGreaterElement();
+//        nextGreaterElement.nextGreaterElementMain();
 
 
     //    {
