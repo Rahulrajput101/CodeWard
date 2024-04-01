@@ -32,7 +32,7 @@ public class FirstNonRepeatingCharacter {
 
         int[] freq = new int[26];
 
-        Queue<Character> q = LinkedList<>();
+        Queue<Character> q = new  LinkedList<>();
 
         for(int i = 0; i<s.length(); i++){
             char ch = s.charAt(i);
