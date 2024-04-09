@@ -2,6 +2,8 @@ package linked_list;
 
 public class RemoveDuplicateFromSortedList2 {
     public ListNode deleteDuplicates(ListNode head) {
+
+
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode prev = dummy;

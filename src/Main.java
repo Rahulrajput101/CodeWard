@@ -5,6 +5,7 @@ import Others.ReverseVowels;
 import hasmaps.WordPattern;
 import linked_list.ListNode;
 import linked_list.RemoveDuplicateFromSortedList;
+import linked_list.RemoveDuplicateFromSortedList2;
 import queue.FirstNonRepeatingCharacter;
 import queue.InterleaveTwoHalves;
 import queue.QueueUsing2Stacks;
@@ -23,22 +24,22 @@ public class Main {
 
         //Queue
 
-        InterleaveTwoHalves interleaveTwoHalves = new InterleaveTwoHalves();
-        Queue<Integer> q = new LinkedList<>();
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        q.add(4);
-        q.add(5);
-        q.add(6);
-        q.add(7);
-        q.add(8);
-        q.add(9);
-        q.add(10);
-        interleaveTwoHalves.interLeaveTwoHalvesMain(q);
-        while (!q.isEmpty()){
-            System.out.print(q.remove() + " ");
-        }
+//        InterleaveTwoHalves interleaveTwoHalves = new InterleaveTwoHalves();
+//        Queue<Integer> q = new LinkedList<>();
+//        q.add(1);
+//        q.add(2);
+//        q.add(3);
+//        q.add(4);
+//        q.add(5);
+//        q.add(6);
+//        q.add(7);
+//        q.add(8);
+//        q.add(9);
+//        q.add(10);
+//        interleaveTwoHalves.interLeaveTwoHalvesMain(q);
+//        while (!q.isEmpty()){
+//            System.out.print(q.remove() + " ");
+ //       }
 
 //        FirstNonRepeatingCharacter firstNonRepeatingCharacter = new FirstNonRepeatingCharacter();
 //        firstNonRepeatingCharacter.firstNotRepeatingMain("aabccxb");
@@ -175,20 +176,20 @@ public class Main {
 
 
             //Linked List
-//        ListNode head = new ListNode(1);
-//        head.next = new ListNode(1);
-//        head.next.next = new ListNode(2);
-//        head.next.next.next = new ListNode(2);
-//        head.next.next.next.next = new ListNode(3);
-//
-//        // Create an instance of RemoveDuplicateFromSortedList
-//         remover = new RemoveDuplicateFromSortedList();
-//
-//        // Call deleteDuplicates to remove duplicates
-//        ListNode result = remover.deleteDuplicates(head);
-//        // Print the list after removing duplicates
-//        System.out.println("List after removing duplicates:");
-//        printList(result);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(1);
+        head.next.next = new ListNode(2);
+        head.next.next.next = new ListNode(2);
+        head.next.next.next.next = new ListNode(3);
+
+        // Create an instance of RemoveDuplicateFromSortedList
+          RemoveDuplicateFromSortedList2 remover = new RemoveDuplicateFromSortedList2();
+
+        // Call deleteDuplicates to remove duplicates
+        ListNode result = remover.deleteDuplicates(head);
+        // Print the list after removing duplicates
+        System.out.println("List after removing duplicates:");
+        printList(result);
     //    }
 
 
