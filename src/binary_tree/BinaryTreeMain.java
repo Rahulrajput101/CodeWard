@@ -31,12 +31,12 @@ public class BinaryTreeMain {
     }
 
     public static void main(String[] args){
-        Node root = new Node(3);
-        root.left = new Node(9);
-       // root.left.left = new Node(4);
-       // root.left.right = new Node(5);
-        root.right = new Node(20);
-        root.right.left = new Node(15);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.right = new Node(3);
+        root.right.left = new Node(6);
         root.right.right = new Node(7);
 //        HeightOfBinaryTree heightOfBinaryTree = new HeightOfBinaryTree();
 //        int height = heightOfBinaryTree.heightOfBinaryTreeMain(root);
@@ -58,10 +58,29 @@ public class BinaryTreeMain {
 //        LevelOrderTraversal levelOrderTraversal = new LevelOrderTraversal();
 //        System.out.println(levelOrderTraversal.levelOrder(root));
 
-        TopViewOfBinaryTree topViewOfBinaryTree = new TopViewOfBinaryTree();
-        List<Integer> list = new ArrayList<>();
-        list = topViewOfBinaryTree.topViewMain(root);
-        System.out.println(list);
+//        TopViewOfBinaryTree topViewOfBinaryTree = new TopViewOfBinaryTree();
+//        List<Integer> list = new ArrayList<>();
+//        list = topViewOfBinaryTree.topViewMain(root);
+//        System.out.println(list);
+
+//       KthLevelOfBianryTree kthLevelOfBianryTree = new KthLevelOfBianryTree();
+//  //     kthLevelOfBianryTree.kthLevel(root,2);
+//        //approach 2
+//        kthLevelOfBianryTree.kthLevelByRecursion(root,2);
+
+//        LCAoFBinaryTree lcAoFBinaryTree =  new LCAoFBinaryTree();
+//        BinaryTreeMain.Node node = lcAoFBinaryTree.lcaMain(root,15,7);
+//        System.out.println(node.data);
+
+//        MinDistanceBetweenTwoNodes minDistanceBetweenTwoNodes = new MinDistanceBetweenTwoNodes();
+//       int dist =  minDistanceBetweenTwoNodes.minDistanceOFNodes(root, root.left.left , root.right.right);
+//        System.out.println(dist);
+
+//        KthAncesstorOfNode kthAncesstorOfNode = new KthAncesstorOfNode();
+//        kthAncesstorOfNode.kthAncestor(root,root.right.right);
+
+        TransformToSumTree transformToSumTree = new TransformToSumTree();
+        transformToSumTree.transformSumTreeMain(root);
     }
 
 
