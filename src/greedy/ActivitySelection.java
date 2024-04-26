@@ -23,6 +23,7 @@ public class ActivitySelection {
                 lastAct = end[i];
             }
         }
+        
 
         System.out.println(maxAct);
     }
