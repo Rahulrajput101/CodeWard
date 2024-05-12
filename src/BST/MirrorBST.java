@@ -7,7 +7,7 @@ public class MirrorBST {
          mirror(root);
     }
 
-    private BST.Node mirror(BST.BST.Node root) {
+    private BST.Node mirror(BST.Node root) {
         if(root == null){
             return null;
         }

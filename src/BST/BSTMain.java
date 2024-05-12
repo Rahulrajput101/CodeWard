@@ -29,6 +29,17 @@ public class BSTMain {
         root2.right.right = new BST.Node(11);
         root2.right.right.right = new BST.Node(14);
 
+        BST.Node root3 = new BST.Node(50);
+        root3.left = new BST.Node(30);
+        root3.left.left = new BST.Node(5);
+        root3.left.right = new BST.Node(20);
+
+        root3.right = new BST.Node(60);
+        root3.right.left = new BST.Node(45);
+        root3.right.right = new BST.Node(70);
+        root3.right.right.right = new BST.Node(80);
+        root3.right.right.left = new BST.Node(65);
+
        // BST.inOrder(node);
 //        SearchBST searchBST = new SearchBST();
 //        Boolean isFound =searchBST.searchBSTMain(root,7);
@@ -38,7 +49,10 @@ public class BSTMain {
 //        printRange.printRangeMain(root,3,7);
       //  BST.inOrder(root);
 
-        RootToLeafpath rootToLeafpath = new RootToLeafpath();
-        rootToLeafpath.rootToLeafPathMain(root2);
+//        RootToLeafpath rootToLeafpath = new RootToLeafpath();
+//        rootToLeafpath.rootToLeafPathMain(root2);
+
+        SizeOfLargestBSTSubtree sizeOfLargestBSTSubtree = new SizeOfLargestBSTSubtree();
+        sizeOfLargestBSTSubtree.largestSubtreeMain(root3);
     }
 }
