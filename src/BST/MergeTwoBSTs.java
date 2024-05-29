@@ -57,7 +57,7 @@ public class MergeTwoBSTs {
         return sList;
     }
 
-    private void inOrderBST(BST.BST.Node root, ArrayList<Integer> list1) {
+    private void inOrderBST(BST.Node root, ArrayList<Integer> list1) {
         if (root == null){
             return;
         }
