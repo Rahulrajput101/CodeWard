@@ -3,7 +3,7 @@ package queue;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class SlidingWindowMaximum {
+public class SlidingWindowMaximum {//nLogK
     public int[] slidingWindowMaxMain(int[] arr, int k){
 
         Deque <Integer> deque = new LinkedList<>();

@@ -2,6 +2,8 @@ package linked_list;
 
 import stack.PalidromeLinkedListUsingStack;
 
+import java.util.LinkedList;
+
 public class LinkedListMain {
     public static void main(String[] args) {
         //Linked List
@@ -26,5 +28,21 @@ public class LinkedListMain {
         boolean isPalindrome = palidromeLinkedListUsingStack.PalindromeLLStackMain(head);
         System.out.println( "isPalindrome" + isPalindrome);
 
+    }
+    public static void main2(String[] args) {
+        // Create a LinkedList
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        // Add elements to the LinkedList
+        linkedList.add("Element 1");
+        linkedList.add("Element 2");
+        linkedList.add("Element 3");
+        linkedList.add("Element 4");
+
+        // Print the elements of the LinkedList
+        System.out.println("LinkedList elements:");
+        for (String element : linkedList) {
+            System.out.println(element);
+        }
     }
 }

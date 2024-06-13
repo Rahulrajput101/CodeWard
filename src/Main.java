@@ -1,21 +1,5 @@
-import Others.GcdOfStrings;
-import Others.KidsWithCandies;
-import Others.MergeTwoStringAlternatively;
-import Others.ReverseVowels;
-import hasmaps.WordPattern;
+import Others.*;
 import linked_list.ListNode;
-import linked_list.RemoveDuplicateFromSortedList;
-import linked_list.RemoveDuplicateFromSortedList2;
-import queue.FirstNonRepeatingCharacter;
-import queue.InterleaveTwoHalves;
-import queue.QueueUsing2Stacks;
-import sliding_window.MaxCons;
-import sorting.MergeSort;
-import sorting.SelectionSort;
-import stack.*;
-
-import java.util.LinkedList;
-import java.util.Queue;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -176,22 +160,24 @@ public class Main {
 
 
             //Linked List
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(1);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(2);
-        head.next.next.next.next = new ListNode(3);
-
-        // Create an instance of RemoveDuplicateFromSortedList
-          RemoveDuplicateFromSortedList2 remover = new RemoveDuplicateFromSortedList2();
-
-        // Call deleteDuplicates to remove duplicates
-        ListNode result = remover.deleteDuplicates(head);
-        // Print the list after removing duplicates
-        System.out.println("List after removing duplicates:");
-        printList(result);
+//        ListNode head = new ListNode(1);
+//        head.next = new ListNode(1);
+//        head.next.next = new ListNode(2);
+//        head.next.next.next = new ListNode(2);
+//        head.next.next.next.next = new ListNode(3);
+//
+//        // Create an instance of RemoveDuplicateFromSortedList
+//          RemoveDuplicateFromSortedList2 remover = new RemoveDuplicateFromSortedList2();
+//
+//        // Call deleteDuplicates to remove duplicates
+//        ListNode result = remover.deleteDuplicates(head);
+//        // Print the list after removing duplicates
+//        System.out.println("List after removing duplicates:");
+//        printList(result);
     //    }
 
+        ScoreOfString scoreOfString = new ScoreOfString();
+        scoreOfString.scoreOfStringMain();
 
     }
 
