@@ -26,19 +26,41 @@ public class CreateGraph {
          }
 
 
-         graph[2].add(new Edge(2,3,1));
+         //for prim
+        //         //Vertex 0
+        graph[0].add(new Edge(0,1,10));
+        graph[0].add(new Edge(0,3,30));
+        graph[0].add(new Edge(0,2,15));
 
-         graph[3].add(new Edge(3,1,1));
+         //Vertex 1
+        graph[1].add(new Edge(1,0,10));
+        graph[1].add(new Edge(1,3,40));
 
-         graph[4].add(new Edge(4,0,1));
-         graph[4].add(new Edge(4,1,1));
+        //Vertex 2
+        graph[2].add(new Edge(2,0,15));
+        graph[2].add(new Edge(2,3,50));
 
-         graph[5].add(new Edge(5,0,1));
-         graph[5].add(new Edge(5,2,1));
+        //Vertex 3
+        graph[3].add(new Edge(3,1,40));
+        graph[3].add(new Edge(3,2,50));
 
 
-         TopologicalSorting topologicalSorting = new TopologicalSorting();
-         topologicalSorting.topologicalMain(graph);
+          PrimsAlgoritm primsAlgoritm = new PrimsAlgoritm();
+          primsAlgoritm.primsMain(graph);
+//
+//         graph[2].add(new Edge(2,3,1));
+//
+//         graph[3].add(new Edge(3,1,1));
+//
+//         graph[4].add(new Edge(4,0,1));
+//         graph[4].add(new Edge(4,1,1));
+//
+//         graph[5].add(new Edge(5,0,1));
+//         graph[5].add(new Edge(5,2,1));
+//
+//
+//         TopologicalSorting topologicalSorting = new TopologicalSorting();
+//         topologicalSorting.topologicalMain(graph);
 
 
 
