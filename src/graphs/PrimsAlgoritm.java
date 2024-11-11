@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class PrimsAlgoritm {
 
-    static class Pair implements Comparable<Pair>{
+     class Pair implements Comparable<Pair>{
         int v;
         int c;  //cost
 
